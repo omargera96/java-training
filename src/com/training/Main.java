@@ -8,7 +8,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter your number.");
         int number = reader.nextInt();
-        int result = nm.addNumberDigits(number);
+        int result = nm.largestNumber(number);
         System.out.println("Result of: " + number + " is " + result);
     }
 }

@@ -11,7 +11,7 @@ public class Numbers {
         this.n = n;
     }
     
-    int addNumberDigits(int n) {
+    public int addNumberDigits(int n) {
         String nString = String.valueOf(n);
         int result = 0;
         char[] arraynumbers = nString.toCharArray();
@@ -25,5 +25,13 @@ public class Numbers {
             result = result + actualNumber;
         }
         return result;
+    }
+    
+    public int largestNumber(int n) {
+        String resultString = "";
+        for (int i = 1; i <= n; i++) {
+            resultString += "9";
+        }
+        return Integer.parseInt(resultString);
     }
 }
