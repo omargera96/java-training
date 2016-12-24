@@ -34,4 +34,13 @@ public class Numbers {
         }
         return Integer.parseInt(resultString);
     }
+    
+    public int maxMultiple(int divisor, int bound) {
+        int a;
+        for (int i = 1; true; i++) {
+            a = i * divisor;
+            if (a > bound) 
+                return a - divisor;
+        }
+    }
 }
