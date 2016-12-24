@@ -7,8 +7,10 @@ public class Main {
         Numbers nm = new Numbers();
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter your number.");
-        int number = reader.nextInt();
-        int result = nm.largestNumber(number);
-        System.out.println("Result of: " + number + " is " + result);
+        int n1 = reader.nextInt();
+        System.out.println("Enter your number 2.");
+        int n2 = reader.nextInt();
+        int result = nm.circleOfNumbers(n1, n2);
+        System.out.println("Result of: " + n1 + "and " + n2 + " is " + result);
     }
 }

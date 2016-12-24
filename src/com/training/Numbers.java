@@ -43,4 +43,16 @@ public class Numbers {
                 return a - divisor;
         }
     }
+    
+    public int circleOfNumbers(int n, int firstNumber) {
+        for (int i = 0; i < n; i++) {
+            if(i == firstNumber) 
+                if(i > (n/2))
+                    return i + (n/2);
+                else
+                    return i - (n/2);
+        }
+        return 0;
+    }
+    
 }
