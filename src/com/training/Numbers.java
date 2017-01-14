@@ -25,7 +25,7 @@ public class Numbers {
             result = result + actualNumber;
         }
         return result;
-    }
+    }  
     
     public int largestNumber(int n) {
         String resultString = "";
@@ -55,4 +55,10 @@ public class Numbers {
         return 0;
     }
     
+    
+    public int lateRide(int n) {
+        int n1 = n/60;
+        int n2 = n%60;
+        return n1/10 + n1%10 + n2/10 + n2%10;
+    }
 }
